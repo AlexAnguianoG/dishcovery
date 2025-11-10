@@ -35,7 +35,7 @@ export function HeroSection({
   return (
     <header className={styles.header}>
       <Image
-        alt="Hero background image"
+        alt={image.alternativeText || "Hero background image"}
         className={styles.backgroundImage}
         height={1080}
         src={imageUrl}
