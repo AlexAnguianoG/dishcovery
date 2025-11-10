@@ -1,4 +1,3 @@
-import { cacheLife } from "next/cache";
 import qs from "qs";
 
 import type { SignInFormSchema, SignUpFormSchema } from "@/validations/auth";
