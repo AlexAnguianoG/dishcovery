@@ -5,8 +5,7 @@ import type { SignInFormSchema, SignUpFormSchema } from "@/validations/auth";
 
 import { HOME_PAGE_QUERY } from "./queries/home-page";
 
-export const STRAPI_BASE_URL =
-  process.env.STRAPI_BASE_URL || "http://localhost:1337";
+export const STRAPI_BASE_URL = process.env.STRAPI_BASE_URL;
 
 export async function getHomePage() {
   "use cache";
