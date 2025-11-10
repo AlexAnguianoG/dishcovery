@@ -3,11 +3,12 @@ import { getHomePage } from "@/lib/strapi";
 
 export async function generateMetadata() {
   const strapiData = await getHomePage();
-
-  const { title, description } = strapiData;
-
-  return { title, description };
+  return {
+    title: strapiData?.title,
+    description: strapiData?.description,
+  };
 }
+
 export default async function Home() {
   const strapiData = await getHomePage();
 
